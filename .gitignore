@@ -1,0 +1,6 @@
+# misc
+.env
+/config/service_account_key.json
+
+# dependencies
+/node_modules
