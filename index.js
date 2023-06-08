@@ -16,6 +16,10 @@ app.get('/', function (req, res) {
 const userRoute = require("./routes/auth");
 app.use("/api/users/",userRoute);
 
+//collection route
+const collectionRoute = require("./routes/collection")
+app.use("/api/collection/",collectionRoute)
+
 mongoose.connect(process.env.DB_URL,{useNewUrlParser : true});
 mongoose.connection
 .once("open", ()=> console.log("Connected"))
